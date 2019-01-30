@@ -1,12 +1,7 @@
-str=input("enter the string ")
+str = input("enter the string ")
 def char_frequency(str):
-    char=0
     for i in str:
-        char=char+1
-    print("Number of character",char)
+        print("{}:{}".format(i,str.count(i)))
+
+
 char_frequency(str)
-
-
-
-
-

@@ -1,8 +1,8 @@
 user_input=input("enter the inputs you want")
-def sum(a=1,b=2):
+def sum(number1=1,number2=2):
   if(user_input =='yes'):
-    if(a!=b):
-     return a+b
+    if(number1!=number2):
+     return number1+number2
   else:
    print("get the value from default")
 

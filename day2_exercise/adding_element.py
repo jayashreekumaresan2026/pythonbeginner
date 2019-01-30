@@ -1,12 +1,10 @@
 array = []
-ranges = int(input("Enter the range of list"))
-def add_element():
-    for i in range(1,ranges):
-        sum=0
-        number = int(input("enter the number to be added"))
-        array2= array.append(number)
-        size_array=len(array2)
-        for i in (1,size_array):
-            sum +=i
+
+def add_element(array):
+    sum=0
+    for i in array:
+        sum += i
     return sum
-print(add_element())
+
+print("The list of element get added:")
+print(add_element([1, 2, 3, 4]))
