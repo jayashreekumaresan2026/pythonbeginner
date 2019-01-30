@@ -1,6 +1,6 @@
-k=input("enter the inputs you want")
+user_input=input("enter the inputs you want")
 def sum(a=1,b=2):
-  if(k =='yes'):
+  if(user_input =='yes'):
     if(a!=b):
      return a+b
   else:

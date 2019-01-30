@@ -7,7 +7,7 @@ while True:
  else:
   print("the number is less then guess")
   continue
-  git
+
 
 
 
