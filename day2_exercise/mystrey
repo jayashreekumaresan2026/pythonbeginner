@@ -1,0 +1,22 @@
+MYSTERY(int n)                       int =4
+{                                   {
+in   sum=1;                            sum=1 then
+                                        for i to 4
+   for (int i=1; i<= n; i++) {              checks the value less then 6
+       	 if i <6 then {                             if true
+    }                                           for k=1 to n
+  		 for (int k=1; k<=n; k++)                    sum becomes 6 then it will come out of the loop
+  		  {
+   			 sum = sum * 2                          else statement will execute utill the condition gets fail
+
+  		 }                                              sum=1024
+   	 } else {                                               come to else check the value is less 10 if n=8
+
+  		 if i < 10 then {                                       if true
+   			 sum = sum * 5                                          print the value bye multiplying into 5
+ 		 } else {                                                       return sum
+   			 sum = sum * 3
+   		 }
+   	 }
+    }
+    return sum;
