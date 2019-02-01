@@ -12,8 +12,8 @@ def non_repeating():
              if user_string[i] != user_string[i - 1]:
                 print(user_string[i])
                 break
-             else:
-                if user_string[i] != user_string[i + 1] and user_string[i] != user_string[i - 1]:
+        else:
+             if user_string[i] != user_string[i + 1] and user_string[i] != user_string[i - 1]:
                   print(user_string[i])
                   break
 non_repeating()

@@ -6,5 +6,4 @@ def sum_numbers(*args):
         sum = sum + num
     return sum
 
-
 print(sum_numbers(1,2,3))
