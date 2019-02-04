@@ -1,7 +1,7 @@
-def item():
+def item(my_array):
     count = 0
-    for x in dict.values():
-        if x == random.random():
-            count += len(dict[x])
+    for values in my_array.values():
+        if type(values) == list:
+            count +=1
     return count
-print(item({1:"a"}))
+print(item({1:"a",2:[1,2,3,]}))
