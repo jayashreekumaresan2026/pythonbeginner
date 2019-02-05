@@ -2,7 +2,7 @@ n=[-1,0,0,-1,100]
 pos,neg,zero=0,0,0
 num=0
 while(num<len(n)):
-    if n[num]>0
+    if n[num]>0:
         pos+=1
     elif n[num]==0:
         zero+=1
