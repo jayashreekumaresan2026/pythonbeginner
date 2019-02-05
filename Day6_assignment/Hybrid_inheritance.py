@@ -24,8 +24,8 @@ class Professor(Person):
         self.section = chr("section")
     def show_professor_details(self):
         print(self.department + " ," + self.branch + " ," + self.section+",")
-class secretory(Employee_details,Professor):
-    def secretory_details(self):
+class college_details(Employee_details,Professor):
+    def college(self):
         self.college = str(input("college"))
     def display(self):
         print("Employee_college", self.college)
