@@ -13,12 +13,12 @@ class Person:
             print("Address of the person:", self.address)
 
 
-class is_employee(Person):
+class Employee(Person):
     def __init__(self, name, email_address, phone_number, address, employee_id, salary):
+        Person.__init__(self, name, email_address, phone_number, address)
         self.employee_id = employee_id
         self.salary = salary
 
-        Person.__init__(self, name, email_address, phone_number, address)
 
 
     def get_employee(self):
@@ -26,6 +26,6 @@ class is_employee(Person):
         return string
 
 first_class = Person('jaya',"jayashree.2026","000000000000","someaddress")
-second_class=is_employee('jaya',"jayashree.2026","000000000000","someaddress","1086", "somesalary")
+second_class=Employee('jaya',"jayashree.2026","000000000000","someaddress","1086", "somesalary")
 print(first_class.get_details())
 print(second_class.get_employee())

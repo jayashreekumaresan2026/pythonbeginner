@@ -29,3 +29,5 @@ class college_details(Employee_details,Professor):
         self.college = str(input("college"))
     def display(self):
         print("Employee_college", self.college)
+derived=college_details()
+derived.get_details()

@@ -5,10 +5,10 @@ class Person:
         self.age = age
 
     def getdetails(self):
-        return self.firstname + " " + self.lastname + " " + self.age
+        print( self.firstname + " " + self.lastname + " " + self.age)
 
 
-class Personal_details(Person):
+class PersonalDetails(Person):
     def __init__(self, email_id, phonenumber, address):
         self.email_id = email_id
         self.phonenumber = phonenumber
@@ -18,12 +18,12 @@ class Personal_details(Person):
         return self.getdetails() + " ," + self.phonenumber + self.address
 
 
-class Employee_details(Person, Personal_details):
+class Employee_details(Person, PersonalDetails):
     def __init__(self, first, last, age, email_id, phonenumber, address):
         Person.__init__(self, first, last, age)
-        Personal_details.__init__(self, email_id, phonenumber, address)
+        PersonalDetails.__init__(self, email_id, phonenumber, address)
 
 
-derived_class = Employee_details("jaya", 'shree', '21', 1999, "0000000", "someaddress")
-derived_class.getdetails()
-derived_class.get_personal_info()
+derived_class = Employee_details("jaya", 'shree', '21', 1999, "0000000", "some_address")
+print(derived_class.getdetails())
+print(derived_class.get_personal_info())

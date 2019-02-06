@@ -16,7 +16,7 @@ class Professor(Employee_details):
     def display(self):
         self.department = str(input("department"))
         self.branch = str(input("branch"))
-        self.section = chr("section")
+        self.section = chr(input("section"))
         print("firstname:", self.name)
         print("lastname:", self.lastname)
         print("age:", self.age)
