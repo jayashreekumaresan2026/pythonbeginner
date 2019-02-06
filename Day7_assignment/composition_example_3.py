@@ -11,14 +11,15 @@ class Account:
 
 
 class Bank:
-    def __init__(self, branch, holder_name):
+    def __init__(self, branch, holder_name,Account):
         self.branch = branch
         self.holder_name = holder_name
+        self.account=Account
 
     def bank_details(self):
-        return "Account details of th person"+(self.holder_name.get_details() + self.account_type + self.branch)
+        print(self.account.get_details())
 
 
 ob1 = Account("savings", "xxxxxxyyyyyy")
 ob2 = Bank("canara", "yyyyyy",ob1)
-print(ob2.bank_details())
+ob2.bank_details()
