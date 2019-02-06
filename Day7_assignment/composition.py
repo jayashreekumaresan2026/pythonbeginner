@@ -1,20 +1,20 @@
-class Memory:
-    def __int__(self, RAM, ROM):
-        self.RAM = RAM
-        self.ROM = ROM
-    def prints(self):
-         print("hai hello")
-class Computer:
-    def __int__(self, model, version):
-        self.model = self.model
-        self.version = self.version
+class Salary:
+    def __init__(self,pay):
+        self.pay=pay
 
-    def show_details(self):
-        print("model of the computer :", self.model)
-        print("version of the computer:", self.version)
-        print(self.version.prints())
+    def get_total(self):
+       return (self.pay*12)
+
+class Employee:
+    def __init__(self,pay,bonus):
+        self.pay=pay
+        self.bonus=bonus
+        self.obj_salary=Salary(self.pay)
+
+    def annual_salary(self):
+        return "Total: "  +  str(self.obj_salary.get_total()+self.bonus)
 
 
-composition2 = Memory(16, 32)
-composition = Computer("HP", 3.4, composition2)
-composition2.show_details()
+obj_emp=Employee(100,10)
+print (obj_emp.annual_salary())
+
