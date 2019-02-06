@@ -4,7 +4,7 @@ class Account:
         self.account_type = account_type
 
     def get_details(self):
-        if self.account_no == "xxxxxxyyyyyy":
+        if self.account_no == "012345":
             print("valid user")
         else:
             print("enter valid account_no")
@@ -18,8 +18,12 @@ class Bank:
 
     def bank_details(self):
         print(self.account.get_details())
+        print(self.holder_name)
+        print(self.branch)
+        print(self.Account.account_no)
 
 
-ob1 = Account("savings", "xxxxxxyyyyyy")
-ob2 = Bank("canara", "yyyyyy",ob1)
+
+ob1 = Account("savings", "012345")
+ob2 = Bank("canara_bank", "jaya",ob1)
 ob2.bank_details()
